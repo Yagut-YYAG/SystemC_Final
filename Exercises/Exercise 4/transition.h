@@ -47,5 +47,26 @@ SC_MODULE(transition){
         else {std::cout<<this->name() <<": NOT Fired"<<std::endl;}
     }
 };
+// void fire() {
+// 		bool NoInhibitors = true;
 
+// 		for (unsigned int i = 0; i < L; i++)
+// 		{
+// 			if (inhibitors[i]->testTokens()) {
+// 				NoInhibitors = false;
+// 			}
+// 		}
+// 		for (unsigned int i = 0; i < N; i++)
+// 		{
+// 			if (in[i]->testTokens() && NoInhibitors) {
+// 				cout << this->name() << ": Fired" << endl;
+// 				in[i]->removeTokens();
+// 				out[i]->addTokens();
+// 			}
+// 			else {
+// 				cout << this->name() << ": NOT Fired" << endl;
+// 			}
+
+// 		}
+// 	}
 #endif // TRANSITION_H
