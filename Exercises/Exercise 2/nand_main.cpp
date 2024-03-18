@@ -51,17 +51,17 @@ private:
 
         // This is the first message that is printed when the process is
         // executed.
-        std::cout << "hallo " << cnt;
+        //std::cout << "hallo " << cnt;
         std::cout << "SC_METHOD process() trigger counter " << cnt << " simulation time " << sc_time_stamp().to_default_time_units() << " ps Δ cycle " << sc_delta_count() << ":\tA " << (A.read() ? "'1'" : "'0'") << " B " << (B.read() ? "'1'" : "'0'") << " Z " << (Z.read() ? "'1'" : "'0'") << std::endl;
 
-        // Here both signals A and B are set to true.
-        // A.write(true);
-        // B.write(true);
+        //Here both signals A and B are set to true.
+        A.write(true);
+        B.write(true);
 
         // This is the second message that is printed when the process is
         // executed.
        
-        // std::cout << "SC_METHOD process() trigger counter " << cnt << " simulation time " << sc_time_stamp().to_default_time_units() << " ps Δ cycle " << sc_delta_count() << ":\tA " << (A.read() ? "'1'" : "'0'") << " B " << (B.read() ? "'1'" : "'0'") << " Z " << (Z.read() ? "'1'" : "'0'") << std::endl;
+        std::cout << "SC_METHOD process() trigger counter " << cnt << " simulation time " << sc_time_stamp().to_default_time_units() << " ps Δ cycle " << sc_delta_count() << ":\tA " << (A.read() ? "'1'" : "'0'") << " B " << (B.read() ? "'1'" : "'0'") << " Z " << (Z.read() ? "'1'" : "'0'") << std::endl;
 
         // Uncomment the lines below where signals A and B are modified.
         // Check the output messages in the terminal and try to understand
