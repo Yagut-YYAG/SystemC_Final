@@ -32,7 +32,16 @@ class placeChannel: public placeInterface{
     unsigned int tokens;
 
     public:
+    //Constructor
     placeChannel(unsigned int current_tokens):tokens(current_tokens){}
+ //    //Default Constructor
+	// placeChannel() {
+	// 	this->tokens = 0;
+	// }
+	// //Constructor
+	// placeChannel(unsigned int tokens) {
+	// 	this->tokens = tokens;
+	// }
     void addTokens(){
         tokens = tokens + Win;
     }
