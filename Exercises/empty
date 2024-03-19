@@ -1,4 +1,5 @@
 //                                           https://github.com/TUK-SCVP/
+// SEE THREAD EXAMPLE
 #include "systemc.h"
 SC_MODULE(rslatch) {
 sc_in<bool> S;
